@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... -->
+    <link rel="stylesheet" href="dist/main.css"> <!-- Результат компиляции style.scss -->
+</head>
+<!-- ... -->
+<script src="./node_modules/sass/sass.js"></script>
+<script>
+    // Автоматически компилируем scss в css
+    const options = {
+        file: 'src/style.scss',
+        outFile: 'dist/main.css'
+    };
+    window.sass.render(options);
+</script>
+</html>
